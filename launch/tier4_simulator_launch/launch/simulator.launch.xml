@@ -220,7 +220,9 @@
       <!-- pose_twist_fusion_filter module -->
       <group>
         <push-ros-namespace namespace="pose_twist_fusion_filter"/>
-        <include file="$(find-pkg-share tier4_localization_launch)/launch/pose_twist_fusion_filter/pose_twist_fusion_filter.launch.xml"/>
+        <include file="$(find-pkg-share tier4_localization_launch)/launch/pose_twist_fusion_filter/pose_twist_fusion_filter.launch.xml">
+          <arg name="pose_instability_detector_param_path" value="$(find-pkg-share autoware_launch)/config/localization/pose_instability_detector.param.yaml"/>
+        </include>
       </group>
     </group>
     <!-- end name space localization -->

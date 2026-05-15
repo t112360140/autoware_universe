@@ -66,9 +66,9 @@ PointCloudConcatenateDataSynchronizerComponentTemplated<MsgTraits>::
   if (params_.input_topics.empty()) {
     throw std::runtime_error("Need a 'input_topics' parameter to be set before continuing.");
   }
-  if (params_.input_topics.size() == 1) {
-    throw std::runtime_error("Only one topic given. Need at least two topics to continue.");
-  }
+  // if (params_.input_topics.size() == 1) {
+  //   throw std::runtime_error("Only one topic given. Need at least two topics to continue.");
+  // }
 
   if (params_.output_frame.empty()) {
     throw std::runtime_error("Need an 'output_frame' parameter to be set before continuing.");
