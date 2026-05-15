@@ -5,7 +5,7 @@
   <!-- <let name="stop_check_enabled" if="$(eval &quot;'$(var system_run_mode)'=='online'&quot;)" value="true"/>
   <let name="stop_check_enabled" if="$(eval &quot;'$(var system_run_mode)'=='logging_simulation'&quot;)" value="false"/> -->
 
-  <let name="stop_check_enabled" value="false"/>
+  <let name="stop_check_enabled" value="false" />
 
   <!-- When gnss_enabled is false, automatic_pose_initializer will not run, only manual initial position estimation is available. -->
   <arg name="gnss_enabled" default="false" description="gnss availability for initial position estimation"/>
